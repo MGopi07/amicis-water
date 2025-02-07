@@ -8075,7 +8075,7 @@ body.body {
   height: 100%;
   object-fit: cover; /* Ensures the image/video covers the entire area */
   z-index: -1;
-  /* opacity: 0.4; */
+  opacity: 0.4;
 }
 
 .inner-hero .shape2 {
