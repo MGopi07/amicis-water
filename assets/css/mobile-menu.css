@@ -365,9 +365,7 @@
   .inner-hero {
     min-height: 300px !important;
   }
-  .footer-bg-video {
-    object-fit: unset !important;
-  }
+  
   .top-shape-img {
     top: 13% !important; /* Adjust position */
     width: 200px !important; /* Reduce size for mobile */
