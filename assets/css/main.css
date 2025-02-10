@@ -3776,14 +3776,13 @@ body.body {
 /* Service Box */
 .service-box {
   background: var(--bg-light);
-  /* background-image: url(/assets/img/bg/bg_img_1.png);
-  background-size: cover; */
   padding: 20px;
   border: 2px solid #d2dee0;
   border-radius: 15px; /* Soft rounded edges */
   text-align: center;
   position: relative;
-  transition: all 0.4s ease-in-out;
+  transition: background 1s ease-in-out, color 0.5s ease-in-out,
+    box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
   overflow: hidden;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   height: 100%;
@@ -3794,6 +3793,17 @@ body.body {
   color: white;
   box-shadow: 0px 8px 20px rgba(0, 119, 182, 0.3);
   transform: translateY(-5px);
+}
+.service-box h4 a, 
+.service-box p, 
+.service-box .learn-more-btn {
+  transition: color 0.5s ease-in-out;
+}
+
+.service-box:hover h4 a, 
+.service-box:hover p, 
+.service-box:hover .learn-more-btn {
+  color: white;
 }
 
 /* Icons */
@@ -3836,25 +3846,29 @@ body.body {
 }
 
 /* Read More Button */
-.service-box .learn {
+.service-box .learn-more-btn {
   font-size: 16px;
   font-weight: 700;
   display: inline-block;
   margin-top: 12px;
-  color: var(--primary-color);
+  color: white;
   transition: all 0.3s ease-in-out;
+  background-color: #2293a7;
+  padding: 10px 20px;
+  border-radius: 30px;
 }
 
-.service-box:hover .learn {
+.service-box:hover .learn-more-btn {
   color: white;
 }
 
-.service-box .learn i {
+.service-box .learn-more-btn i {
   margin-left: 5px;
-  transition: transform 0.3s;
+  transition: transform 0.5s;
+ 
 }
 
-.service-box:hover .learn i {
+.service-box:hover .learn-more-btn i {
   transform: translateX(5px);
 }
 
@@ -8091,7 +8105,6 @@ body.body {
   height: auto; /* Adjust as needed */
 }
 
-
 .inner-hero .shape2 {
   position: absolute;
   left: 0;
@@ -9661,47 +9674,47 @@ body.body {
   }
 }
 .case1-section-area .cs_case_study_thumb {
-  background-image: url(../img/case/case-study-img1.png);
+  background-image: url(../img/industries/poultry.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .case1-section-area .cs_case_study_thumb.cs_case_study_thumb2 {
-  background-image: url(../img/case/case-study-img2.png);
+  background-image: url(../img/industries/agri.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .case1-section-area .cs_case_study_thumb.cs_case_study_thumb3 {
-  background-image: url(../img/case/case-study-img3.png);
+  background-image: url(../img/industries/health-care.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .case1-section-area .cs_case_study_thumb.cs_case_study_thumb4 {
-  background-image: url(../img/case/case-study-img4.png);
+  background-image: url(../img/industries/factory.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .case1-section-area .cs_case_study_thumb.cs_case_study_thumb5 {
-  background-image: url(../img/case/case-study-img5.png);
+  background-image: url(../img/industries/water.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .case1-section-area .cs_case_study_thumb.cs_case_study_thumb6 {
-  background-image: url(../img/case/case-study-img6.png);
+  background-image: url(../img/industries/machine.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
-.case1-section-area .cs_case_study_thumb.cs_case_study_thumb7 {
+/* .case1-section-area .cs_case_study_thumb.cs_case_study_thumb7 {
   background-image: url(../img/case/case-study-img1.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-}
+} */
 .case1-section-area .cs_case_study.cs_style_1.cs_hover_active {
   margin: 0px 8px;
   border-radius: 5px;
